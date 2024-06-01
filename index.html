@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Procedimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="procedure-form">
+            <h1>Formulário de Procedimentos</h1>
+            <label for="NomeSobrenome">Digite o seu Nome e Sobrenome:</label>
+            <input type="text" id="NomeSobrenome" name="NomeSobrenome" required>
+
+            <label for="procedimento">Qual procedimento o Sr.(a) deseja realizar?</label>
+            <select id="procedimento" name="procedimento" required>
+                <option value="Reconhecer Firma">Reconhecer Firma</option>
+                <option value="Cópia Autenticada">Cópia Autenticada</option>
+                <option value="Abrir Firma">Abrir Firma</option>
+                <option value="Procuração">Procuração</option>
+                <option value="Escritura">Escritura</option>
+                <option value="2ª Via de Certidão">2ª Via de Certidão</option>
+                <option value="1ºVia (Registro de Nascimento/Casamento/Óbito)">1ºVia (Registro de Nascimento/Casamento/Óbito)</option>
+                <option value="Inventário">Inventário</option>
+                <option value="Usucapião">Usucapião</option>
+            </select>
+
+            <label for="info">Digite + informações ou dúvidas sobre o procedimento que irá realizar:</label>
+            <textarea id="info" name="info" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="response"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
